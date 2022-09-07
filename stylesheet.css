@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+}
+input {
+  border-radius: 3rem;
+  border: none;
+  position: relative;
+  height: 61px;
+  width: 370px;
+  top: -31px;
+  text-align: center;
+  box-shadow: 0px 2px 9px 1px rgb(0 0 0 / 20%);
+}
+.head {
+  display: flex;
+  align-items: center;
+  background: #ff8000;
+  height: 7.438rem;
+  width: 100%;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 15px;
+}
+.direction__text {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.direction__linktext {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.styles__direction {
+  background: rgba(235, 235, 235, 1);
+  border-radius: 7rem;
+  text-align: center;
+  padding: 1.1rem;
+  display: flex;
+  margin: 0.5rem;
+  column-gap: 2rem;
+}
+.head__user {
+  display: none;
+}
+.logo__orange {
+  display: none;
+}
+.filters__background {
+  display: grid;
+  width: 305px;
+  height: 49px;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 18px;
+  border-radius: 43px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 0px 3px 1px rgb(239 237 234);
+}
+.open-restaurants__title {
+  display: flex;
+  column-gap: 0.75rem;
+}
+.openrestaurants__pictureandinfo {
+  display: grid;
+  grid-template-rows: 50% 25% 25%;
+}
+.openrestaurants__info-first-section {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+}
+.openrestaurants__info-second-section {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+}
+.openrestaurants__info-second-section--color {
+  color: green;
+  font-weight: 700;
+  font-size: 18.1067px;
+}
+.restaurants__types {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1.4rem;
+}
+
+.filters__title {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.align__icon {
+  margin-left: 21px;
+}
+
+.settings__icon {
+  margin-right: 60px;
+}
+.userhelp {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 1.25rem;
+}
+.openrestaurants__info-name {
+    font-weight: 700;
+    font-size: 20.6933px;
+}
+.openrestaurants__infofont {
+    font-weight: 400;
+    font-size: 18.1067px;
+    color:#242E30CC;
+}
+.openrestaurants__infodetailsfont{
+    font-weight: 400;
+    font-size: 18.1067px;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "promo promo"
+      "direction searchbar"
+      "filterrestaurants filterrestaurants";
+    padding-left: 15rem;
+  }
+  .grid__filters {
+    display: grid;
+    grid-template-columns: 0.9fr;
+    align-items: center;
+    margin: 31px;
+  }
+  .grid__filterrestaurants {
+    display: grid;
+    grid-template-columns: 30% 80%;
+  }
+  .openrestaurants__pictureandinfo {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+  .icon__align {
+    display: none;
+  }
+  .logo__orange {
+    display: flex;
+  }
+  .logo-white {
+    display: none;
+  }
+  .icon__settings {
+    display: none;
+  }
+  .barchart-icon {
+    display: none;
+  }
+  .head {
+    background: none;
+    grid-area: head;
+  }
+
+  input {
+    height: 93px;
+    width: 883px;
+    text-align: Left;
+    padding-left: 36px;
+    margin: 20px;
+    position: static;
+  }
+  .head__user {
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        align-items: center;
+        gap: 0.4rem;
+    }
+  .restaurants__text:hover {
+    color: #ff8000;
+    font-weight: 900;
+  }
+  .openrestaurants{
+    align-self: center;
+  }
+  .styles__direction {
+    grid-area: direction;
+    width: 322px;
+    border-radius: 58px;
+  }
+  .restaurants__types {
+    grid-area: promo;
+    overflow-x: visible;
+  }
+  .searchbar {
+    grid-area: searchbar;
+  }
+  .grid__filterrestaurants {
+    grid-area: filterrestaurants;
+  }
+}
